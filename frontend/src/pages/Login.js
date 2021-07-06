@@ -15,7 +15,7 @@ export default function Login(){
 	return( 
 			<Form >
 			  <Form.Group controlId="formBasicEmail">
-			    <Form.Label>Email address</Form.Label>
+			    <Form.Label>Email address / Username</Form.Label>
 			    <Form.Control 
 			    	type="email" 
 			    	placeholder="Enter email"
