@@ -1,6 +1,6 @@
 
 import React from 'react';
-import {Form, Button} from 'react-bootstrap';
+import {Form, Button, Container} from 'react-bootstrap';
 
 
 export default function Login(){
@@ -14,6 +14,7 @@ export default function Login(){
 	
 	return( 
 			<Form >
+		
 			  <Form.Group controlId="formBasicEmail">
 			    <Form.Label>Email address / Username</Form.Label>
 			    <Form.Control 
@@ -32,10 +33,12 @@ export default function Login(){
                 placeholder="Password" 
                 />
 			  </Form.Group>
+
 			  
 			  <Button variant="primary" type="submit">
 			    Login
 			  </Button>
+			 
 			</Form>
 		)
 }
