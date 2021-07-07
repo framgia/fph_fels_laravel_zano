@@ -35,13 +35,14 @@
 .ActivityHeader{
     justify-content: left;
     text-align: left;
+    width: 90%;
     border-bottom: 1px solid #3e3e3e;
     margin-bottom: 10px;
 }
 .Activities{
-    width: 100%;
+    width: 90%;
     height: 50px;
-    background-color: brown;
+    background-color:#b37272;
     display: flex;
     justify-content: left;
     text-align: left;
