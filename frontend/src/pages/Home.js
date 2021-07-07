@@ -3,6 +3,7 @@ import { Row, Col, Jumbotron } from 'react-bootstrap';
 import Icon from '../assets/images/usericon.png';
 import '../assets/CSS/dash.css';
 import { DashboardData } from '../components/DashboardData';
+import { Link } from 'react-router-dom';
 
 
 export default function Home() {
@@ -40,14 +41,24 @@ export default function Home() {
 						</div>
 					</div>
 					<div >
-						{DashboardData.map((item, index) => {
+						{DashboardData.map((item) => {
 							return (
-								<div key={index} className={item.mName}>
-									<img src={Icon} alt="" />
+								<div key={item.lName} >
+
+								<Link to={`/profile/${item.lName}`}>
+								<div className={item.mName}>
+									<img src={item.pic} alt="" />
 									<div className={item.cName}>
-										<p><a href="">{item.lName}</a> {item.title} <a href="">{item.learned}</a></p>
+										<p>
+										
+										{item.lName}
+									
+										{item.title} <a href="">{item.learned}</a></p>
 										<p>{item.day}</p>
+										
 									</div>
+									</div>
+									</Link>
 								</div>
 							)
 						})}

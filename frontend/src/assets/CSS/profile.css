@@ -1,0 +1,165 @@
+
+
+.ContainerDash{
+    margin-left: 30px;
+    background-color: transparent;
+    position: relative;
+    
+}
+@media(max-width: 400px){
+    .ContainerDash{
+        margin-left: 10px;
+    }
+    .ProfPic-pp{
+        margin: 0 40px 0 10px !important;
+    }
+}
+@media(max-width: 350px){
+    .ProfPic-pp{
+        margin: 0 60px 0 0px !important;
+    }
+    .ContainerDash{
+        margin-left: 0px;
+    }
+}
+.Col-pp{
+    position: relative !important;
+}
+@media(max-width: 1200px){
+    .Col-pp{
+        margin-top: 40% !important;
+    }
+}
+@media(max-width: 750px){
+    .Col-pp{
+        margin-top: 60% !important;
+    }
+    .ProfPic-pp{
+        margin: 0 30px 0 90px !important;
+    }
+}
+@media(max-width: 500px){
+    .Col-pp{
+        margin-top: 70% !important;
+    }
+}
+@media(max-width: 450px)
+{
+    .ProfPic-pp{
+        margin: 0 30px 0 40px !important;
+    }
+}
+@media(max-width: 430px){
+    .Col-pp{
+        position: relative;
+        margin-top: 50% !important;
+    }
+    
+    .Profile-image-pp{
+        height: 100px  !important;
+        width: 100px !important;
+ 
+    } 
+}
+.ProfPic-pp{
+    width: 230px;
+    height: 230px;
+    padding: 0;
+    justify-content: center;
+    text-align: center;
+    margin: 0 40px 0 50px;
+}
+.ProfInfo-aline{
+    display: block;
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+h3{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    position: relative !important;
+    border-bottom: 1px solid #3e3e3e;
+    width: 230px;
+ 
+}
+.ProfPic-pp ul{
+    justify-content: center;
+    display: flex;
+    margin-left: -30px;
+}
+.ProfPic-pp ul li{
+    list-style: none;
+}
+.ProfPic-pp ul li ul{
+    display: block;
+}
+.ProfBottom ul{
+    display: block !important;
+    align-items: center;
+}
+.ProfBottom ul li{
+    padding-bottom: 20px;
+}
+    
+.ProfPic-pp .ProfBottom button{
+    background-color: #3b5b7a;
+    border-radius: 20px;
+    width: 90%;
+}
+    
+.ProfPic-pp .ProfBottom button:hover{
+    background-color: #7b9cbd;
+}
+
+
+.ActivityHeader{
+    justify-content: left;
+    text-align: left;
+    width: 90%;
+    border-bottom: 1px solid #3e3e3e;
+    margin-bottom: 10px;
+}
+.Activities{
+    width: 90%;
+    height: 50px;
+    background-color:#b37272;
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.ActivityImage{
+ 
+}
+.Activitywords{
+    padding: 10px;
+    line-height: 5px;
+}
+@media(max-width: 430px)
+{
+    .Activitywords{
+        padding: 3px 3px 0 3px;
+        line-height: 1px;
+    }
+    .Activitywords p{
+        padding-top: 6px;
+        font-size: 12px;
+    }
+    .ActivityImage{
+        height: 40px;
+        width: 40px;
+    }
+    .Activities{
+        
+        height: 40px;
+        margin-bottom: 10px;
+    }
+}
+.fontcolor{
+    color:antiquewhite !important;
+}
+.dropdowncolor{
+    color: #3e3e3e;
+}

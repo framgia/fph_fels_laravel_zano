@@ -47,13 +47,13 @@
     justify-content: left;
     text-align: left;
     margin-bottom: 10px;
+    list-style: none;
 }
-.ActivityImage{
- 
-}
+
 .Activitywords{
     padding: 10px;
     line-height: 5px;
+    list-style: none;
 }
 
 .fontcolor{
