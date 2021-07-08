@@ -31,34 +31,116 @@
     width: 120px;
     border-radius: 50px;
 }
-
 .ActivityHeader{
     justify-content: left;
     text-align: left;
-    width: 90%;
+    width: 100%;
     border-bottom: 1px solid #3e3e3e;
     margin-bottom: 10px;
 }
 .Activities{
-    width: 90%;
+    width: 100%;
     height: 50px;
     background-color:#b37272;
     display: flex;
     justify-content: left;
     text-align: left;
-    margin-bottom: 10px;
-    list-style: none;
+    margin: 5px 0;
 }
-
+.ActivityImage{
+ 
+}
 .Activitywords{
-    padding: 10px;
+    padding: 5px 5px 0px 5px;
     line-height: 5px;
-    list-style: none;
+    word-break: normal;
 }
-
+.Activitywords p{
+    padding-top: 2px;
+    word-break: normal;
+}
+@media(max-width: 500px)
+{
+    .Activitywords{
+        padding: 3px 3px 0 3px;
+        line-height: 1px;
+    }
+    .Activitywords p{
+        padding-top: 6px;
+        font-size: 10px;
+    }
+    .ActivityImage{
+        height: 40px;
+        width: 40px;
+    }
+    .Activities{
+        
+        height: 40px;
+        margin-bottom: 10px;
+    }
+    .Col-pp{
+        margin-left: 10px;
+    }
+}
 .fontcolor{
     color:antiquewhite !important;
 }
 .dropdowncolor{
     color: #3e3e3e;
 }
+
+/* 
+for the table */
+
+.tableAlign{
+    padding: 0 70px 0 50px;
+}
+@media(max-width: 800px)
+{
+    .tableAlign{
+        padding: 0;
+       
+        left: -30px;
+        width: 80% !important;
+    }
+    .paginationBttns{
+   transform: scale(0.6);
+    }
+}
+
+.ActivityHeader-lessons{
+    justify-content: left;
+    text-align: left;
+    width: 100%;
+    border-bottom: 1px solid #3e3e3e;
+    margin-bottom: 10px;
+}
+
+/* for the pagination  in Lessons Page */
+.paginationBttns{
+    width: 80%;
+    height: 40px;
+    list-style:none;
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.paginationBttns a{
+    padding: 10px;
+    margin: 8px;
+    border-radius: 5px;
+    border: 1px solid #636069;
+    color: #636069;
+    cursor: pointer;
+}
+.paginationBttns a:hover{
+    color: white;
+    background-color: #636069;
+}
+.paginationActive a{
+    color: white;
+    background-color: #636069;
+}
+
+/* for the pagination  in Lessons Page */

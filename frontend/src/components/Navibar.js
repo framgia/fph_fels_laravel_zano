@@ -21,7 +21,7 @@ export default function NaviBar() {
                 <Nav.Link href="/login" className="fontcolor">Login</Nav.Link>
                 <Nav.Link href="/register" className="fontcolor">Register</Nav.Link>
                 <NavDropdown  className="fontcolor" title="Dropdown" id="basic-nav-dropdown">
-                  <NavDropdown.Item href="#action/3.1"  className="dropdowncolor">Lessons</NavDropdown.Item>
+                  <NavDropdown.Item href="/learned"  className="dropdowncolor">Lessons</NavDropdown.Item>
                   <NavDropdown.Item href="#action/3.2"  className="dropdowncolor">Categories</NavDropdown.Item>
                   <NavDropdown.Item href="#action/3.3"  className="dropdowncolor">Profiles</NavDropdown.Item>
                   <NavDropdown.Divider />
