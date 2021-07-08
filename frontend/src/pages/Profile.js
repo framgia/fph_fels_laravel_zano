@@ -8,8 +8,10 @@ import { Link } from 'react-router-dom';
 
 export default function Profile() {
 	
-	const { lName } = useParams();
+	const { id } = useParams();
+	const user = DashboardData.filter(data => data.id === id)[0]
 
+console.log(user)
 	return (
 		<React.Fragment>
 		
@@ -17,9 +19,9 @@ export default function Profile() {
 
 				<div className="ProfPic-pp">
 					<h1>Profile Page</h1>		
-			    	<img src={Icon} alt="" className="Profile-image-pp"/>
+			    	<img src={user.pic} alt="" className="Profile-image-pp"/>
 					<div className="ProfInfo-aline">	
-							<h3>{lName}</h3>
+							<h3>{user.lName}</h3>
 							<div className="line"></div>
 					</div>
 							
@@ -48,7 +50,7 @@ export default function Profile() {
 							<div className="ProfBottom">
 								<ul>
 									<li><button>FOLLOW</button></li>
-									<li><a href="">Learned 20 Words</a></li>
+									<li><a href="">{user.learned}</a></li>
 								</ul>
 							</div>		
 				</div>
@@ -67,7 +69,7 @@ export default function Profile() {
 						</div>
 					</div>
 					<div >
-						{DashboardData.map((item, index) => {
+						{DashboardData.map((item) => {
 							return (
 								<div key={item.lName} >
 
@@ -76,8 +78,8 @@ export default function Profile() {
 									<img src={item.pic} alt="" />
 									<div className={item.cName}>
 										<p>
-										<Link to={`/profile/${item.lName}`}>
-											{item.lName}
+										<Link to={`/profile/${item.id}`}>
+										{item.lName}
 										</Link>
 										{item.title} <a href="">  {item.learned}</a></p>
 										<p>{item.day}</p>

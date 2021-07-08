@@ -27,7 +27,7 @@ export default function Home() {
 					</div>
 				</div>
 				<div >
-					{DashboardData.map((item, index) => {
+					{DashboardData.map((item) => {
 						return (
 							<div key={item.lName} >
 
@@ -36,7 +36,7 @@ export default function Home() {
 								<img src={item.pic} alt="" />
 								<div className={item.cName}>
 									<p>
-									<Link to={`/profile/${item.lName}`}>
+									<Link to={`/profile/${item.id}`}>
 										{item.lName}
 									</Link>
 									{item.title} <a href="">  {item.learned}</a></p>

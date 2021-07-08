@@ -7,6 +7,7 @@ import Register from './pages/Register';
 import Home from './pages/Home';
 import Profile from './pages/Profile';
 import Learned from './pages/Learned';
+import Categories from './pages/Categories';
 
 function App() {
   return (
@@ -20,10 +21,10 @@ function App() {
 								<Route exact path="/register" component={Register} />
 
                 <Route exact path="/learned" component={Learned} />
-                <Route path="/profile/:lName">
+                <Route path="/profile/:id">
                    <Profile />
                 </Route>
-
+                <Route exact path="/categories" component={Categories} />
                 
 								<Route exact path="/login" component={Login} />
 					
