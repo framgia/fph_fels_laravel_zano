@@ -1,0 +1,10 @@
+
+
+.categoryContainer{
+    padding: 15px 3px 15px 3px;
+   
+}
+.categoryContainer h2{
+    border-bottom: 1px solid #3e3e3e;
+    padding-bottom: 10px;
+}
