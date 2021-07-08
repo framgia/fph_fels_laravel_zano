@@ -4,6 +4,7 @@ import Icon from '../assets/images/usericon.png';
 import '../assets/CSS/profile.css'
 import { DashboardData } from '../components/DashboardData';
 import { useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function Profile() {
 	
@@ -68,12 +69,22 @@ export default function Profile() {
 					<div >
 						{DashboardData.map((item, index) => {
 							return (
-								<div key={index.id} className={item.mName}>
-									<img src={item.pic} alt="" className="ActivityImage"/>
+								<div key={item.lName} >
+
+							
+								<div className={item.mName}>
+									<img src={item.pic} alt="" />
 									<div className={item.cName}>
-										<p><a href={'/profile/'+index.lName}>{item.lName}</a> {item.title} <a href="">{item.learned}</a></p>
+										<p>
+										<Link to={`/profile/${item.lName}`}>
+											{item.lName}
+										</Link>
+										{item.title} <a href="">  {item.learned}</a></p>
 										<p>{item.day}</p>
+										
 									</div>
+									</div>
+									
 								</div>
 							)
 						})}

@@ -25,7 +25,7 @@
 .Col-pp{
     position: relative !important;
 }
-@media(max-width: 1200px){
+@media(max-width: 990px){
     .Col-pp{
         margin-top: 40% !important;
     }
@@ -117,27 +117,32 @@ h3{
 .ActivityHeader{
     justify-content: left;
     text-align: left;
-    width: 90%;
+    width: 95%;
     border-bottom: 1px solid #3e3e3e;
     margin-bottom: 10px;
 }
 .Activities{
-    width: 90%;
+    width: 95%;
     height: 50px;
     background-color:#b37272;
     display: flex;
     justify-content: left;
     text-align: left;
-    margin-bottom: 10px;
+    margin: 5px 0;
 }
 .ActivityImage{
  
 }
 .Activitywords{
-    padding: 10px;
+    padding: 5px 5px 0px 5px;
     line-height: 5px;
+    word-break: normal;
 }
-@media(max-width: 430px)
+.Activitywords p{
+    padding-top: 2px;
+    word-break: normal;
+}
+@media(max-width: 500px)
 {
     .Activitywords{
         padding: 3px 3px 0 3px;
@@ -145,7 +150,7 @@ h3{
     }
     .Activitywords p{
         padding-top: 6px;
-        font-size: 12px;
+        font-size: 10px;
     }
     .ActivityImage{
         height: 40px;
@@ -155,6 +160,9 @@ h3{
         
         height: 40px;
         margin-bottom: 10px;
+    }
+    .Col-pp{
+        margin-left: 10px;
     }
 }
 .fontcolor{
