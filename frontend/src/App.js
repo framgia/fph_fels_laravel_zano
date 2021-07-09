@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import Profile from './pages/Profile';
 import Learned from './pages/Learned';
 import Categories from './pages/Categories';
+import QuesAndAnswer from './pages/QuesAndAnswer';
 
 function App() {
   return (
@@ -19,8 +20,10 @@ function App() {
 							<Switch>
 								<Route exact path="/" component={Home} />
 								<Route exact path="/register" component={Register} />
-
+                QuesAndAnswer
                 <Route exact path="/learned" component={Learned} />
+                <Route exact path="/QuesAndAnswer" component={QuesAndAnswer} />
+
                 <Route path="/profile/:id">
                    <Profile />
                 </Route>

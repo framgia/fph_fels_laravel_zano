@@ -19,7 +19,7 @@ import React from 'react';
     },
     {
         id: '4',
-        title: 'While Commuting',
+        title: ' Commuting',
         Content: 'This caregory will help you learn the basic conversation of the said category',
     },
     {
