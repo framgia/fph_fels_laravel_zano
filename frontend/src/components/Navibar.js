@@ -25,7 +25,7 @@ export default function NaviBar() {
                   <NavDropdown.Item href="/categories"  className="dropdowncolor">Categories</NavDropdown.Item>
                   <NavDropdown.Item href="#action/3.3"  className="dropdowncolor">Profiles</NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action/3.4" className="dropdowncolor">Admin</NavDropdown.Item>
+                  <NavDropdown.Item href="/AdminCateg" className="dropdowncolor">Admin</NavDropdown.Item>
                 </NavDropdown>
               </Nav>
 

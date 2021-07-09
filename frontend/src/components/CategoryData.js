@@ -1,7 +1,6 @@
 import React from 'react';
 
-
- export const CategoryData = [
+export const CategoryData = [
     {
         id: '1',
         title: 'Basic Words',
