@@ -11,17 +11,13 @@ function App() {
     <div className="App">
     <BrowserRouter>
         <NaviBar />
-        <Container className="my-3">
-					
+             <Container className="my-3">		
 							<Switch>
 								<Route exact path="/" component={Home} />
 								<Route exact path="/register" component={Register} />
 								<Route exact path="/login" component={Login} />
-					
 							</Switch>
-
 						</Container>
-
     </BrowserRouter>
     </div>
   );
