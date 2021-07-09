@@ -21,7 +21,7 @@ export default function Categories() {
                     <Card.Text>
                         {categ.Content}
                     </Card.Text>
-                    <Button variant="dark"><a href="/QuesAndAnswer">Start</a></Button>
+                    <a href="/QuesAndAnswer"> <Button variant="dark">Start</Button></a>
                 </Card.Body>
             </Card>
         </Col>

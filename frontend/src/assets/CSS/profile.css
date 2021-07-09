@@ -27,12 +27,12 @@
 }
 @media(max-width: 990px){
     .Col-pp{
-        margin-top: 40% !important;
+        margin-top: 30% !important;
     }
 }
 @media(max-width: 750px){
     .Col-pp{
-        margin-top: 60% !important;
+        margin-top: 30% !important;
     }
     .ProfPic-pp{
         margin: 0 30px 0 90px !important;
@@ -40,7 +40,7 @@
 }
 @media(max-width: 500px){
     .Col-pp{
-        margin-top: 70% !important;
+        margin-top: 30% !important;
     }
 }
 @media(max-width: 450px)
