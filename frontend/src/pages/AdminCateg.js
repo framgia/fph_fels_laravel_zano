@@ -7,10 +7,8 @@ import ReactPaginate from 'react-paginate';
 export default function AdminCateg() {
     const [users, setUsers] = useState(CategoryData.slice(0,30));
     const [pageNumber, setPageNumber] = useState(0);
-
     const usersPerPage = 7
     const pagesVisited = pageNumber * usersPerPage
-
     const displayWords = users.slice(pagesVisited, pagesVisited + usersPerPage).map((user) => {
         return (
             <tbody>
@@ -31,7 +29,6 @@ export default function AdminCateg() {
 
 	return (
 		<React.Fragment>
-
             <div className="tableAlign">
                  <div className="ActivityHeader-lessons">
                     <h5>Categories</h5>
@@ -44,12 +41,9 @@ export default function AdminCateg() {
                         <th>Description</th>
                         <th>Action</th>
                         </tr>
-                    </thead>
-                    
+                    </thead>      
                     {displayWords}
-    
                 </Table>
-            
                     <ReactPaginate 
                         previousLabel={"Previous"}
                         nextLabel={"Next"}

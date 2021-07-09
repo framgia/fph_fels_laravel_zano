@@ -6,9 +6,7 @@ import { CategoryData } from "../components/CategoryData";
 export default function Categories() {
 	return (
         <div className="categoryContainer">
-         
-                <h2>Categories</h2>
-            
+                <h2>Categories</h2> 
 		<Row>
     {CategoryData.map((categ) => {
         return (
@@ -26,9 +24,7 @@ export default function Categories() {
             </Card>
         </Col>
         );
-    })}
-		  
-           
+    })}   
 		</Row>
         </div>
 	)
