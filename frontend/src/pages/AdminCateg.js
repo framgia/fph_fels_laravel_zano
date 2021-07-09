@@ -16,7 +16,7 @@ export default function AdminCateg() {
                       <td>{user.id}</td>
                     <td>{user.title}</td>
                     <td>{user.Content}</td>
-                    <td className="TableAction"><a href="/Addwords">Add-word</a> | <a href="">Edit</a> | <a href="">Delete</a></td>
+                    <td className="TableAction"><a href="/Addwords">Add-word</a> | <a href="/Edit">Edit</a> | <button>Delete</button></td>
                 </tr>
              </tbody>
         );

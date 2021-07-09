@@ -11,6 +11,7 @@ import Categories from './pages/Categories';
 import QuesAndAnswer from './pages/QuesAndAnswer';
 import AdminCateg from './pages/AdminCateg';
 import Addwords from './pages/AdminActions/Addwords';
+import Edit from './pages/AdminActions/Edit';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
                 <Route exact path="/learned" component={Learned} />
                 <Route exact path="/AdminCateg" component={AdminCateg} />
                 <Route exact path="/Addwords" component={Addwords} />
+                <Route exact path="/Edit" component={Edit} />
                 <Route exact path="/QuesAndAnswer" component={QuesAndAnswer} />
 
                 <Route path="/profile/:id">
