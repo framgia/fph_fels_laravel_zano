@@ -49,7 +49,7 @@ console.log(user)
 							</ul>
 							<div className="ProfBottom">
 								<ul>
-									<li><input type="button"  className="button" placeholder="button" value="Follow"/></li>
+									<li><input type="button" className="follow" placeholder="button" value="Follow"/></li>
 									<li><a href="">{user.learned}</a></li>
 								</ul>
 							</div>		

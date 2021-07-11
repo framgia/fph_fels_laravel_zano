@@ -73,7 +73,9 @@
   }
   
   button:hover {
-    background-color: #555e7d;
+    background-color: #7a7d7b;
+    color:cornsilk;
+    border-radius: 5px;
   }
   
   button:focus {

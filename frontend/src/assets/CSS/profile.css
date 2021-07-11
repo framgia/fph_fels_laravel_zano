@@ -4,7 +4,16 @@
     margin-left: 30px;
     background-color: transparent;
     position: relative;
-    
+}
+.follow{
+    width: 200px;
+    border-radius: 15px;
+    background-color: #3e3e3e;
+    color:aliceblue;
+}
+.follow:hover{
+    background-color: #7a7d7b;
+    color: #3e3e3e;
 }
 @media(max-width: 400px){
     .ContainerDash{
@@ -110,7 +119,9 @@ h3{
 }
     
 .ProfPic-pp .ProfBottom .button:hover{
-    background-color: #7b9cbd;
+    background-color: #7a7d7b;
+    color:cornsilk;
+    border-radius: 5px;
 }
 
 

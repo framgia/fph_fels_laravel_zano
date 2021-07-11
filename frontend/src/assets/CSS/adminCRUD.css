@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Uchen&display=swap');
+
 .AddContainer{
    display: flex;
    justify-content: center;
@@ -11,7 +13,7 @@
 .formContainer{
     position: relative;
     display: block;
-    width: 300px;
+    width: 330px;
     height: 300px;
     border-radius: 10px;
     background: #ecf0f3;
@@ -21,7 +23,7 @@
 form{
    width: 100%;
    display: block;
-    height:300px;
+    height:370px !important;
     justify-content: center;
     justify-content: center;
     align-items: center;
@@ -36,7 +38,34 @@ form{
     position: relative;
     padding: 20px 50px 20px 50px;
 }
-label,input{
+label{
     margin-top: 10px;
     position: relative;
+}
+.inputbuttonedit{
+    padding: 3px 8px 3px 8px;
+    border-radius: 15px;
+
+}
+
+
+.inputbuttonedit:hover{
+    background-color: #7a7d7b;
+    color:cornsilk;
+}
+
+
+.tdContainer{
+   margin-top: 5px;
+  line-height: 50px;
+  font-size: 12px;
+  
+}
+.newquestioncontainer{
+    margin-top: 30px;
+    margin-bottom: 2px;
+}
+.choicesinput{
+    margin-bottom: 15px;
+    border-radius: 10px;
 }
