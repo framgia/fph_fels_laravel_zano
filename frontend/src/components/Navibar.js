@@ -1,5 +1,4 @@
 import React from 'react';
-// Import the necessary components from react-bootstrap
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
