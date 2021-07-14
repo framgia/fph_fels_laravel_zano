@@ -9,19 +9,19 @@ import Home from './pages/Home';
 
 function App() {
 
-return(
-  <div className="App">
-    <BrowserRouter>
-      <NaviBar />
-      <Container className="my-3">		
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/register" component={Register} />
-          <Route exact path="/login" component={Login} />
-        </Switch>
-      </Container>
-    </BrowserRouter>
-  </div>
+  return(
+    <div className="App">
+      <BrowserRouter>
+        <NaviBar />
+        <Container className="my-3">		
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/register" component={Register} />
+            <Route exact path="/login" component={Login} />
+          </Switch>
+        </Container>
+      </BrowserRouter>
+    </div>
   );
 }
 
