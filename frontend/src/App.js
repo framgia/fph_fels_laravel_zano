@@ -9,30 +9,25 @@ import Profile from './pages/Profile';
 import Learned from './pages/Learned';
 import Categories from './pages/Categories';
 
-function App() {
+function App(){
+
   return (
     <div className="App">
-    <BrowserRouter>
+      <BrowserRouter>
         <NaviBar />
         <Container className="my-3">
-					
-							<Switch>
-								<Route exact path="/" component={Home} />
-								<Route exact path="/register" component={Register} />
-
-                <Route exact path="/learned" component={Learned} />
-                <Route path="/profile/:id">
-                   <Profile />
-                </Route>
-                <Route exact path="/categories" component={Categories} />
-                
-								<Route exact path="/login" component={Login} />
-					
-							</Switch>
-
-						</Container>
-
-    </BrowserRouter>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/register" component={Register} />
+            <Route exact path="/learned" component={Learned} />
+            <Route exact path="/categories" component={Categories} />
+            <Route exact path="/login" component={Login} />	
+            <Route path="/profile/:id">
+               <Profile />
+            </Route>
+          </Switch>
+        </Container>
+      </BrowserRouter>
     </div>
   );
 }
