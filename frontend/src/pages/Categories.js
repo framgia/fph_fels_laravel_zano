@@ -4,28 +4,29 @@ import '../assets/CSS/Category.css';
 import { CategoryData } from "../components/CategoryData";
 
 export default function Categories() {
-	return (
-        <div className="categoryContainer">
-                <h2>Categories</h2> 
-		<Row>
-    {CategoryData.map((categ) => {
-        return (
+
+  return (
+    <div className="categoryContainer">
+      <h2>Categories</h2> 
+      <Row>
+        {CategoryData.map((categ) => {
+          return (
             <Col xs={12} md={4} style={{padding: '10px'}}>
-            <Card className="cardHighlight">
+              <Card className="cardHighlight">
                 <Card.Body>
-                    <Card.Title>
-                        <h2>{categ.title}</h2>
-                    </Card.Title>
-                    <Card.Text>
-                        {categ.Content}
-                    </Card.Text>
-                    <a href="/QuesAndAnswer"> <Button variant="dark">Start This Quiz?</Button></a>
+                  <Card.Title>
+                    <h2>{categ.title}</h2>
+                  </Card.Title>
+                  <Card.Text>
+                    {categ.Content}
+                  </Card.Text>
+                  <a href="/QuesAndAnswer"> <Button variant="dark">Start This Quiz?</Button></a>
                 </Card.Body>
-            </Card>
-        </Col>
-        );
-    })}   
-		</Row>
-        </div>
-	)
+              </Card>
+            </Col>
+          );
+        })}   
+      </Row>
+    </div>
+  )
 }
