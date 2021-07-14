@@ -8,29 +8,22 @@ import Home from './pages/Home';
 import Profile from './pages/Profile';
 
 function App() {
+
   return (
     <div className="App">
-    <BrowserRouter>
-        <NaviBar />
+      <BrowserRouter>
+      <NaviBar />
         <Container className="my-3">
-					
-							<Switch>
-								<Route exact path="/" component={Home} />
-								<Route exact path="/register" component={Register} />
-
-
-                <Route path="/profile/:lName">
-                   <Profile />
-                </Route>
-
-                
-								<Route exact path="/login" component={Login} />
-					
-							</Switch>
-
-						</Container>
-
-    </BrowserRouter>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/register" component={Register} />
+            <Route exact path="/login" component={Login} />
+            <Route path="/profile/:lName">
+              <Profile />
+            </Route>    
+          </Switch>
+        </Container>
+      </BrowserRouter>
     </div>
   );
 }
