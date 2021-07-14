@@ -13,7 +13,11 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <NaviBar />
+<<<<<<< HEAD
         <Container className="my-3">		
+=======
+          <Container className="my-3">
+>>>>>>> 3ba42b5 (Made changes to indentions for all pages)
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/register" component={Register} />
