@@ -1,0 +1,64 @@
+
+
+.ContainerDash{
+    margin-left: 30px;
+    background-color: transparent;
+    
+}
+.ProfPic{
+    width: 310px;
+    height: 230px;
+    padding: 20px;
+}
+.ProfPic .ProfName{
+    display: flex;
+    justify-content: center;
+}
+.ProfInfo{
+    left: -20px;
+    width: 170px;
+    display: block;
+    flex-wrap: nowrap;
+}
+.ProfInfo ul li{
+   text-decoration: none;
+   list-style: none;
+   flex-wrap: nowrap;
+   overflow: visible;
+}
+.Profile-image{
+    height: 120px;
+    width: 120px;
+    border-radius: 50px;
+}
+
+.ActivityHeader{
+    justify-content: left;
+    text-align: left;
+    width: 90%;
+    border-bottom: 1px solid #3e3e3e;
+    margin-bottom: 10px;
+}
+.Activities{
+    width: 90%;
+    height: 50px;
+    background-color:#b37272;
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.ActivityImage{
+ 
+}
+.Activitywords{
+    padding: 10px;
+    line-height: 5px;
+}
+
+.fontcolor{
+    color:antiquewhite !important;
+}
+.dropdowncolor{
+    color: #3e3e3e;
+}
