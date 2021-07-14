@@ -8,32 +8,26 @@ import Home from './pages/Home';
 import Profile from './pages/Profile';
 import Learned from './pages/Learned';
 
-function App() {
+function App(){
+
   return (
     <div className="App">
-    <BrowserRouter>
+      <BrowserRouter>
         <NaviBar />
         <Container className="my-3">
-					
-							<Switch>
-								<Route exact path="/" component={Home} />
-								<Route exact path="/register" component={Register} />
-
-                <Route exact path="/learned" component={Learned} />
-                <Route path="/profile/:lName">
-                   <Profile />
-                </Route>
-
-                
-								<Route exact path="/login" component={Login} />
-					
-							</Switch>
-
-						</Container>
-
-    </BrowserRouter>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/register" component={Register} />
+            <Route exact path="/learned" component={Learned} />
+            <Route exact path="/login" component={Login} />
+            <Route path="/profile/:lName">
+              <Profile />
+            </Route>
+          </Switch>
+        </Container>
+      </BrowserRouter>
     </div>
-  );
-}
+    );
+  }
 
 export default App;
