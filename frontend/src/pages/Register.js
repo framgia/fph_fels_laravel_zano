@@ -4,7 +4,6 @@ import Button from 'react-bootstrap/Button';
 import axios from 'axios';
 
 class Register extends Component{
-
   state = {
     fname:'',
     lname:'',
@@ -25,54 +24,34 @@ class Register extends Component{
   }
 
 render(){
-return(
-    <Form onSubmit={this.saveRegister}>
-        <Form.Group controlId="formFile" className="mb-3">
+  return(
+      <Form onSubmit={this.saveRegister}>
+          <Form.Group controlId="formFile" className="mb-3">
             <Form.Label>Default file input example</Form.Label>
             <Form.Control type="file" />
-        </Form.Group>
-        <Form.Group controlId="formBasicPassword">
-              <Form.Label>First Name</Form.Label>
-                <Form.Control  type="text" name="fname" value={this.state.fname} onChange={this.handleInput}/>
-        </Form.Group>
-      <Form.Group controlId="formBasicPassword">
-        <Form.Label>Last Name</Form.Label>
-                <Form.Control type="text" name="lname" value={this.state.lname} onChange={this.handleInput} />
-      </Form.Group>
-
-      <Form.Group controlId="formBasicPassword">
-      <Form.Label>Email</Form.Label>
+          </Form.Group>
+          <Form.Group controlId="formBasicPassword">
+            <Form.Label>First Name</Form.Label>
+            <Form.Control  type="text" name="fname" value={this.state.fname} onChange={this.handleInput}/>
+          </Form.Group>
+          <Form.Group controlId="formBasicPassword">
+            <Form.Label>Last Name</Form.Label>
+            <Form.Control type="text" name="lname" value={this.state.lname} onChange={this.handleInput} />
+          </Form.Group>
+          <Form.Group controlId="formBasicPassword">
+            <Form.Label>Email</Form.Label>
             <Form.Control type="text" name="email" value={this.state.email} onChange={this.handleInput} />
-      <Form.Text className="text-muted">
-          We'll never share your email with anyone else.
-        </Form.Text>
-    </Form.Group>
-      <Form.Group controlId="formBasicPassword">
-        <Form.Label>Password</Form.Label>
-        <Form.Control type="password" name="password" value={this.state.password} onChange={this.handleInput} />
-      </Form.Group>
-
-
-
-      <Button  type="submit" >Register</Button>
-    </Form>
+            <Form.Text className="text-muted">
+              We'll never share your email with anyone else.
+            </Form.Text>
+          </Form.Group>
+          <Form.Group controlId="formBasicPassword">
+            <Form.Label>Password</Form.Label>
+            <Form.Control type="password" name="password" value={this.state.password} onChange={this.handleInput} />
+          </Form.Group>
+        <Button  type="submit" >Register</Button>
+      </Form>
     )
   }
 }
 export default Register;
- //   <Form.Group as={Col} controlId="formGridState">
-  //   <Form.Label>Gender</Form.Label>
-  //   <Form.Control as="select" defaultValue="Choose...">
-  //     <option>Male</option>
-  //     <option>Female</option>
-  //   </Form.Control>
-  // </Form.Group>
-
-  // <Form.Group as={Col} controlId="formGridState">
-  //   <Form.Label>Language</Form.Label>
-  //   <Form.Control as="select" defaultValue="Choose...">
-  //     <option>Japanese</option>
-  //     <option>English</option>
-  //     <option>Bisaya</option>
-  //   </Form.Control>
-  // </Form.Group>
