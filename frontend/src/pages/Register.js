@@ -9,27 +9,55 @@ class Register extends Component{
     fname:'',
     lname:'',
     email:'',
-    password:''
+    password:'',
+    file_path: ''
+   
   }
 
-  handleInput = (e) => {
+  handleInput = e => {
     this.setState({
       [e.target.name]:e.target.value
     });
   }
-
-  saveRegister = async (e) => {
-    e.preventDefault();
-    const res = await axios.post('http://localhost:8000/api/register', this.state);
-    alert("alert")
+   onChangeFile = e => {
+     this.setState({
+      file_path: e.target.files[0]
+     })
   }
+
+  saveRegister = e => {
+    e.preventDefault();
+      const formData = new FormData();
+      const config = {
+        headers: {
+            'content-type': 'multipart/form-data'
+          }
+      }
+
+      formData.append('fname',this.state.fname);
+      formData.append('lname',this.state.lname);
+      formData.append('email',this.state.email);
+      formData.append('password',this.state.password);
+      formData.append('file_path',this.state.file_path);
+      
+      console.log(this.state.file_path)
+      
+    axios.post('http://localhost:8000/api/register', formData, config);
+   
+    if(formData === true){
+      alert("success")
+    }else{
+      alert("fail")
+    }
+  }
+
 
 render(){
 return(
-    <Form onSubmit={this.saveRegister}>
+    <Form onSubmit={this.saveRegister} enctype="multipart/form-data">
         <Form.Group controlId="formFile" className="mb-3">
             <Form.Label>Default file input example</Form.Label>
-            <Form.Control type="file" />
+            <Form.Control type="file" filename="file_path" onChange={this.onChangeFile}/>
         </Form.Group>
         <Form.Group controlId="formBasicPassword">
               <Form.Label>First Name</Form.Label>
@@ -51,9 +79,6 @@ return(
         <Form.Label>Password</Form.Label>
         <Form.Control type="password" name="password" value={this.state.password} onChange={this.handleInput} />
       </Form.Group>
-
-
-
       <Button  type="submit" >Register</Button>
     </Form>
     )
