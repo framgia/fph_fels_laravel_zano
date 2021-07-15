@@ -17,7 +17,7 @@ import AddQuestions from './pages/AdminActions/AddQuestions';
 function App() {
 
   return (
-    <div className="App">
+    <div>
       <BrowserRouter>
         <NaviBar />
         <Container className="my-3">
