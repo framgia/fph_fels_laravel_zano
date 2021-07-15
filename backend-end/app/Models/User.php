@@ -25,7 +25,9 @@ class User extends Authenticatable
         'lname',
         'email',
         'password',
-        'file_path'
+        'language',
+        'gender',
+        'filename',
     ];
 
     /**

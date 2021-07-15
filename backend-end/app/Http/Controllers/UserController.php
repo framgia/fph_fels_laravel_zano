@@ -15,23 +15,26 @@ class UserController extends Controller
      */
     public function register(Request $req)
     {
-        return $req->file_path;
+        
         
         $req->validate([
             'fname'=>'required',
             'lname'=>'required',
             'email'=>'required',
             'password'=>'required',
-            'file_path'=>'required|mimes:jpg,png,jpeg|max:5048'
+            'language'=>'required',
+            'gender'=>'required',
+            'filename'=>'required|mimes:jpg,png,jpeg|max:5048'
         ]);
-        $newImage = time().'-'.$req->name.'-'.$req->file_path->extension();
-        $req->file_path->move(public_path('images'),$newImage);
+        $fileNames = $req->file('filename')->store('images');
         $user = User::create([
             'fname'=>$req->input('fname'),
             'lname'=>$req->input('lname'),
             'email'=>$req->input('email'),
-            'password'=>$req->input('password'),
-            'file_path'=>$newImage
+            'password' => Hash::make($req['password']),
+            'language'=>$req->input('language'),
+            'gender'=>$req->input('gender'),
+            'filename'=>$fileNames
         ]);
         $user->save();
         return $user;
