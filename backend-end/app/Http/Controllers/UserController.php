@@ -39,6 +39,10 @@ class UserController extends Controller
         $user->save();
         return $user;
     }
+    public function index()
+    {
+        return User::all();
+    }
 
     /**
      * Store a newly created resource in storage.
